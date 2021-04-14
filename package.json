@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DyerMaker42/killa_korean/issues"
   },
-  "homepage": "https://github.com/DyerMaker42/killa_korean#readme"
+  "homepage": "https://github.com/DyerMaker42/killa_korean#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
