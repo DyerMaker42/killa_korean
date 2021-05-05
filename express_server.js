@@ -20,3 +20,7 @@ app.get("/about", (req, res) => {
   res.send("<html><body>This is my about me page filled with all the interesting stories about josh <b>World</b></body></html>\n");
 });
 
+app.get("/urls", (req, res) => {
+  const templateVars = { urls: urlDatabase };
+  res.render("urls_index", templateVars);
+});
