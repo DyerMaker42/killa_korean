@@ -20,12 +20,14 @@ app.get("/about", (req, res) => {
   res.send("<html><body>This is my about me page filled with all the interesting stories about josh <b>World</b></body></html>\n");
 });
 
-
+// page containing URLs
 app.get("/urls", (req, res) => {
   const templateVars = { urls: urlDatabase };
   res.render("urls_index", templateVars);
 });
 
+
+// page containing josh's resume, gonna make it look sexy AF
 app.get("/resume", (req,res) => {
   const templateVars = {};
   res.render("resume", templateVars)
