@@ -8,6 +8,13 @@ const urlDatabase = {
   "b2xVn2": "http://www.happy.com",
   "9sm5xK": "http://www.google.com"
 };
+
+// josh jobs
+
+const joshJobs = {
+  "bars": ["stanley park brewpub", "the distillery", "The Fox Cabaret", "The old dirty bourbon"],
+  "trades": ["growing city", "weeds", "northern touch"]
+}
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
@@ -29,6 +36,6 @@ app.get("/urls", (req, res) => {
 
 // page containing josh's resume, gonna make it look sexy AF
 app.get("/resume", (req,res) => {
-  const templateVars = {};
+  const templateVars = {jobs: joshJobs};
   res.render("resume", templateVars)
 });
