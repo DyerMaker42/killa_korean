@@ -15,6 +15,6 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send("<html><body>Hello <b>World</b></body></html>\n");
+  res.send("<html><body>This is my about me page filled with all the interesting stories about josh <b>World</b></body></html>\n");
 });
 
