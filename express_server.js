@@ -14,6 +14,7 @@ const joshJobs = {
   "bars": ["stanley park brewpub", "the distillery", "The Fox Cabaret", "The old dirty bourbon"],
   "trades": ["growing city", "weeds", "northern touch"]
 }
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
