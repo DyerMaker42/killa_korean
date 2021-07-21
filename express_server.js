@@ -39,3 +39,5 @@ app.get("/resume", (req,res) => {
   const templateVars = {jobs: joshJobs};
   res.render("resume", templateVars)
 });
+
+app.get("/projects", ())
