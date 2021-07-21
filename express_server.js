@@ -13,7 +13,7 @@ const urlDatabase = {
 const joshJobs = {
   "bars": ["stanley park brewpub", "the distillery", "The Fox Cabaret", "The old dirty bourbon"],
   "trades": ["growing city", "weeds", "northern touch"]
-}
+};
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
@@ -37,7 +37,10 @@ app.get("/urls", (req, res) => {
 // page containing josh's resume, gonna make it look sexy AF
 app.get("/resume", (req,res) => {
   const templateVars = {jobs: joshJobs};
-  res.render("resume", templateVars)
+  res.render("resume", templateVars);
 });
 
-app.get("/projects", ())
+app.get("/projects", (req,res) => {
+  const templateVars = {};
+  res.render("projects", templateVars);
+});
