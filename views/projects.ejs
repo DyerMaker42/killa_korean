@@ -11,34 +11,12 @@
 <body>
   <main style="margin: 1em;">
     <h3>My URLs</h3>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Job Type</th>
-          <th scope="col">jobs</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% for(let jobType in jobs) { %>
-          <tr>
-            <td><%= jobType %></td>
-            <td><%= jobs[jobType] %></td>
-          </tr>
-        <% } %>
-      </tbody>
-    </table>
+    
     <body>
        
       
       <p>
-        <% for( jobType in jobs) { %>
-          
-            <% for(let individualJob of jobType){ %>
-              <%= jobType[individualJob] %>
-              <!-- <%= " I made so much moeny at" + individualJob  %> -->
-              <%}%>
-          
-        <% } %>
+        Hey these are some of my super cool projects
       </p>
     </body>
   </main>
